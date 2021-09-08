@@ -62,6 +62,9 @@ $ node julie.js
 <a href="https://github.com/farhan-dqz/JulieMwol/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/farhan-dqz/JulieMwol?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
+<p align="center">
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Chunkindepadayali&show_icons=true&theme=dark&locale=en" alt="Chunkindepadayali" /></p>
+    
 ## 📢 Guide
 Click WA logo to Join Support Group 👇
     <br>
@@ -69,7 +72,7 @@ Click WA logo to Join Support Group 👇
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BT0nNPBthyFI1ejoSr0i7W)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=chunkindepadayali&repo=LIZA-MWOL&theme=nightowl)](https://github.com/Chunkindepadayali/LIZA-MWOL)
+  ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=chunkindepadayali&bg_color=000000&color=4fff67&line=4fff67&point=ffffff&area=true&hide_border=true)
   </div>
     
 ### ⚠️ Warning! 
