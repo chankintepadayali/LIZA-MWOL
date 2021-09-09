@@ -32,8 +32,8 @@ Project created by <a href="https://github.com/farhan-dqz">Farhan-dqz</a> to mak
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/farhan-dqz/Julie-Mwol
-$ cd Julie-Mwol
+$ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
+$ cd LIZA-MWOL
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node julie.js
@@ -41,8 +41,8 @@ $ node julie.js
       
 ```js
 SETUP
-$ git clone https://github.com/farhan-dqz/JulieMwol
-$ cd JulieMwol
+$ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
+$ cd LIZA-MWOL
 $ npm i
 $ node julie.js
 ```
@@ -50,7 +50,7 @@ $ node julie.js
 ----
 
   <p align="center">
-  <a href="httsp://github.com/farhan-dqz/JulieMwol">
+  <a href="https://github.com/Chunkindepadayali/LIZA-MWOL">
     
 <a href="https://github.com/farhan-dqz/followers">
 <img src="https://img.shields.io/github/repo-size/farhan-dqz/Julie-Mwol?color=green&label=Repo%20total%20size&style=plastic">
