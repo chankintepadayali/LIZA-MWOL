@@ -36,10 +36,10 @@ if (Config.WORKTYPE == 'private') {
                         HANDLER = '.';
                     }
                     if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🧞‍♂️ ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📂 ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n';
+                        CMD_HELP += '➢ ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n' + '. ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🧞‍♂️ ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '♦️ ' + ' ```' + command.desc + '``` \n\n';
+                        CMD_HELP += '➢ ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n' + '. ' + ' ```' + command.desc + '``` \n\n\n';
                     }
                     if (command.desc == '' && command.usage == '' && !command.warn == '') {
                         CMD_HELP += '🧞‍♂️ ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '♦️ ' + ' ```' + command.warn + '```\n\n'
