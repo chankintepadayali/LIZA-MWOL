@@ -11,7 +11,7 @@
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/settings/profile">LIZA MWOL</a> to make it public
+Project created by <a href="https://github.com/Chunkindepadayali">LIZA MWOL</a> to make it public
     <br>
        | © |
         Reserved |
