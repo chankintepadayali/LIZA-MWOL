@@ -123,7 +123,7 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "LIZA MWOL"
+            "value": "𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐"
         },
         "WORK_TYPE": {
             "description": "Liza Mwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
