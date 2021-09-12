@@ -1,8 +1,8 @@
 {
-  "name": "Liza Mwol",
+  "name": "JulieMwol",
   "version": "7.3.6",
   "description": "Liza Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
-  "main": "./LIZA-MWOL/bot.js",
+  "main": "./Julie-Mwol/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
