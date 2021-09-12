@@ -21,7 +21,7 @@
   "developer": "@TOXIC-DEVIL / @farhan-dqz",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Chunkindepadayali/LIZA-MWOL/issues"
+    "url": "git+https://github.com/Chunkindepadayali/LIZA-MWOL/issues"
   },
   "homepage": "https://github.com/Chunkindepadayali/LIZA-MWOL#readme",
   "dependencies": {
