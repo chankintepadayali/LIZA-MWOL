@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /LIZA-MWOL/Dockerfile
+      worker: /julie/Dockerfile
 run:
    worker: npm start
