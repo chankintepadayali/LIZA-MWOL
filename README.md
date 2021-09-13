@@ -42,7 +42,7 @@ $ node Liza.js
 ```js
 SETUP
 $ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
-$ cd Liza-MWOL
+$ cd LIZA-MWOL
 $ npm i
 $ node Liza.js
 ```
