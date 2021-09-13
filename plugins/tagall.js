@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
     
   
     
-    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
         
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -90,7 +90,7 @@ else if (Config.WORKTYPE == 'public') {
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n 👤 @' + uye.id.split('@')[0] + 'ㅤ';
+                    mesaj += '\n 🦋 @' + uye.id.split('@')[0] + 'ㅤ🍁';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
@@ -155,7 +155,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n 👤 @' + uye.id.split('@')[0] + 'ㅤ';
+                    mesaj += '\n 🦋 @' + uye.id.split('@')[0] + 'ㅤ🍁';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
