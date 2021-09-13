@@ -36,15 +36,15 @@ $ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
 $ cd LIZA-MWOL
 $ npm install @adiwajshing/baileys
 $ npm install chalk
-$ node julie.js
+$ node LIZA.js
 ```
       
 ```js
 SETUP
 $ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
-$ cd LIZA-MWOL
+$ cd Liza-MWOL
 $ npm i
-$ node julie.js
+$ node Liza.js
 ```
 
 ----
