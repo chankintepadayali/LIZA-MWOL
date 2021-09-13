@@ -36,7 +36,7 @@ $ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
 $ cd LIZA-MWOL
 $ npm install @adiwajshing/baileys
 $ npm install chalk
-$ node LIZA.js
+$ node Liza.js
 ```
       
 ```js
