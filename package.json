@@ -1,14 +1,14 @@
 {
-  "name": "JulieMwol",
+  "name": "LizaMwol",
   "version": "7.3.6",
-  "description": "Liza Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+  "description": "Liza Mwol is the Modified Version of WhatsAsena, Made By @Chunkindepadayali with Baileys.",
   "main": "./LIZA-MWOL/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chunkindepadayali/LIZA-MWOL.git"
+    "url": "git+https://github.com/Chunkindepadayali/LIZA-MWOL.git"
   },
   "keywords": [
     "whatsapp",
@@ -17,11 +17,11 @@
     "asena",
     "WhatsAsena"
   ],
-  "author": "farhan-dqz",
+  "author": "Chunkindepadayali",
   "developer": "@TOXIC-DEVIL / @farhan-dqz",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "git+https://github.com/Chunkindepadayali/LIZA-MWOL/issues"
+    "url": "https://github.com/Chunkindepadayali/LIZA-MWOL/issues"
   },
   "homepage": "https://github.com/Chunkindepadayali/LIZA-MWOL#readme",
   "dependencies": {
