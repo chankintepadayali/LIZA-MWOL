@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 TERROR BOY
+/* Copyright (C) 2021 (hunk!nd3 p4d4y41!
 
 .
 
