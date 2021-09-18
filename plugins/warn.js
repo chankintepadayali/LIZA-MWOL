@@ -1,5 +1,4 @@
 /* Copyright (C) 2021 (hunk!nd3 p4d4y41!
-
 .
 
 Licensed under the  GPL-3.0 License;
