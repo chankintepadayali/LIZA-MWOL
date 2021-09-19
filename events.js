@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
 */
-
+.
 // Komutları burada tutacağız.
 var config = require('./config');
 var Commands = [];
