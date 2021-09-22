@@ -1,27 +1,17 @@
 const Asena = require('../events');
-
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-
 const axios = require('axios');
 
 const Language = require('../language');
-
 const Lang = Language.getString('wallpaper');
 
 Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
     var r_text = new Array ();
-
     
-
     
-
-   
-
+    
   r_text[0] = "https://i.imgur.com/2nYs8dN.jpg";
-
-    
-
     
 
     var i = Math.floor(1*Math.random())
