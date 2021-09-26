@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Whats bot - Ravindu Manoj
 */
 
-const QueenSew = require('../events');
+const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -16,7 +16,7 @@ const Lang = Language.getString('propbot');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'aliv', fromMe: true, desc: Lang.PR}, (async (message, match) => {
+    Asena.addCommand({pattern: 'aliv', fromMe: true, desc: Lang.PR}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'private') {
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '_*' + Config.OWNERSHIP + '*_\n\n```\nOS       :Mac OS	68k,Power PC ×86_64\nKernel   : 4.4.0- 1093 - aws\nPackage  : 342 (apk)\nSell     : bash 8.0.0\nTerminal : Java Script\nCPU      : AMD Ryzen 9 5900X 12 cores 3.7GHz 105W\nRAM      : Corsair Vengeance LED 16GB Kit (2 x 8GB) 3200MHz\nMemory   : 5120GB / 10240GB (Seagate BarraCuda)\nDownloading : 897mbps\nUploading   : 997mbps\nping        :12```\n\nLIZA-MWOL'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'sysd', fromMe: true, desc: Lang.PR}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.PR}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '_*' + Config.OWNERSHIP + '*_\n\n```\nOS       :Mac OS	68k,Power PC ×86_64\nKernel   : 4.4.0- 1093 - aws\nPackage  : 342 (apk)\nSell     : bash 8.0.0\nTerminal : Java Script\nCPU      : AMD Ryzen 9 5900X 12 cores 3.7GHz 105W\nRAM      : Corsair Vengeance LED 16GB Kit (2 x 8GB) 3200MHz\nMemory   : 5120GB / 10240GB (Seagate BarraCuda)\nDownloading : 897mbps\nUploading   : 997mbps\nping        :12```\n\nLIZA-MWOL'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'psysd', fromMe: true, desc: Lang.PR}, (async (message, match) => {
+    Asena.addCommand({pattern: 'psysd', fromMe: true, desc: Lang.PR}, (async (message, match) => {
 
     var r_text = new Array ();
 
