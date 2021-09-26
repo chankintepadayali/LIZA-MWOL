@@ -18,16 +18,17 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 *owner number wa.me/918075379950*
 
 
-*whatsapp group : https://chat.whatsapp.com/BRPbS6JHUoCE480MpLLM5z*
+*whatsapp group : _https://tinyurl.com/ygpz5bdq_*
 
 
-*githublink       https://github.com/Chunkindepadayali/LIZA-MWOL*
+*githublink       _https://tinyurl.com/yjdej5a2_*
 
 
-*audio commads    https://github.com/Chunkindepadayali/media/tree/main/uploads*
+*audio commads    _https://tinyurl.com/ydvlpbol_*
 
 
-*sticker commads  https://github.com/Chunkindepadayali/media/tree/main/stickers*     
+
+*sticker commads  _https://tinyurl.com/yfpd23yn_*     
 `}) 
 
 })); 
