@@ -13,7 +13,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('propbot');
- if (Config.PSW !== 'kingraviya') {
+
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'aliv', fromMe: true, desc: Lang.PR}, (async (message, match) => {
