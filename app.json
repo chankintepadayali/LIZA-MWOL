@@ -125,11 +125,6 @@
             "required": false,
             "value": "  𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐  \n\n   *ωнαтsαρρ вσт™*   \n"
         },
-        "OWNER_SHIP": {
-            "description": "Change the name of the boat owner",
-            "required": false,
-            "value": "LIZA-MWOL"
-        },
         "WORK_TYPE": {
             "description": "Liza Mwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
