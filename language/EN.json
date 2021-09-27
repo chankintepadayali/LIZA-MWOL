@@ -529,9 +529,6 @@
             "BUL": "Founded Song:",
             "ARAT": "Searched Song:"
         },
-        "propbot": {
-            "PR": "Provides all Properties about the boat ."
-        },
         "gitlink": {
             "GL": "To get github links."
         },
