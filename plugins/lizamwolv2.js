@@ -18,18 +18,18 @@ var ddd = ggg.toString('utf-8')
 Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
-        {title: 'ALIVE', description: " ", rowId:" rowid1"},
-        {title: 'HELP', description: "  ", rowId:" rowid2"},
-        {title: 'XMEDIA', description: " ", rowId:" rowid3"},
-        {title: 'OWNER', description: " ", rowId:" rowid4"},
-        {title: 'GIT', description: "  ", rowId:" rowid5"}
+        {title: '.ALIVE', description: " ", rowId:" rowid1"},
+        {title: '.MENU', description: "  ", rowId:" rowid2"},
+        {title: '.XMEDIA', description: " ", rowId:" rowid3"},
+        {title: '.OWNER', description: " ", rowId:" rowid4"},
+        {title: '.GIT', description: "  ", rowId:" rowid5"}
        ]
 
-       const sections = [{title: "*ωнαтsαρρ вσт™*", rows: rows}]
+       const sections = [{title: "ωнαтsαρρ вσт™", rows: rows}]
 
        const button = {
         buttonText: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
-        description: "  𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐  ",
+        description: "         𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐",
         sections: sections,
         listType: 1
        }
