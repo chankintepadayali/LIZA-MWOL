@@ -18,9 +18,9 @@ var ddd = ggg.toString('utf-8')
 Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
-        {title: '', description: ".ALIVE", rowId:" rowid1"},
-        {title: '', description: ".HELP", rowId:" rowid2"},
-        {title: '', description: ".XMEDIA", rowId:" rowid3"},
+        {title: '      ', description: ".ALIVE", rowId:" rowid1"},
+        {title: '      ', description: ".HELP", rowId:" rowid2"},
+        {title: '      ', description: ".XMEDIA", rowId:" rowid3"},
         {title: '.OWNER', description: "\n\n\n```creater Nithin and Fayas```\n\n```owner number wa.me/918137829228```\n\n```owner number wa.me/918075379950```\n\n ", rowId:" rowid4"},
         {title: '.GIT', description: "\n\n\n```creater Nithin and Fayas```\n\n```owner number wa.me/918137829228```\n\n```owner number wa.me/918075379950```\n\n```whatsapp group : https://chat.whatsapp.com/BRPbS6JHUoCE480MpLLM5z```\n\n```githublink       https://github.com/Chunkindepadayali/LIZA-MWOL```\n\n```audio commads    https://github.com/Chunkindepadayali/media/tree/main/uploads```\n\n```sticker commads  https://github.com/Chunkindepadayali/media/tree/main/stickers```\n  ", rowId:" rowid5"}
        ]
