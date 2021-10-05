@@ -16,9 +16,9 @@ const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
 
-if (Config.WORKTYPE == 'public') {
+if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ALIVE', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
         
         let pp
         try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
