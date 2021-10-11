@@ -26,7 +26,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 
 *audio commads    _https://tinyurl.com/ydvlpbol_*
 
-
+*Bot Make Video ytube -https://youtu.be/s3ugOuxbQ_Q_*
 
 *sticker commads  _https://tinyurl.com/yfpd23yn_*     
 `}) 
