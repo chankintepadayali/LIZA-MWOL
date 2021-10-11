@@ -56,6 +56,15 @@
             "required": true,
             "value": "false"
         },
+        "PM_BLOCK": {
+
+            "description": "Link Engelleme Sistemi. Link Blocking System.",
+
+            "required": true,
+
+            "value": "false"
+
+        },
         "HANDLERS": {
             "description": "For commands.",
             "required": true,
