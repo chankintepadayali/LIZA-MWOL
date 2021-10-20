@@ -165,12 +165,12 @@
         "SONGD": {
             "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
             "required": true,
-            "value": "*╔══╗ ♫*\n*║██║ ♪♪*\n*║██║♫♪*\n*║ ◎♫♪♫ ✎﹏sᴇᴀʀᴄʜɪɴɢ﹏﹏﹏﹏𝅘𝅥𝅮𝅘𝅥𝅯𝆺𝅥𝅯𝄞﹏* \n*╚══╝*"
+            "value": "✮⃝🕊️𝕯𝖔𝖜𝖓𝖑𝖔𝖆𝖉𝖎𝖓𝖌 𝖄𝖔𝖚𝖗 𝕾𝖔𝖓𝖌✮⃝🕊️"
         },
         "SONGU": {
             "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
             "required": true,
-            "value": "🔉⃝🔊𓊈𒆜UPLOADING SONG𒆜𓊉࿐\n   🌹⃟⃢👑❦𝙇𝙄𝙕𝘼 𝙈𝙒𝙊𝙇❦🌹⃟⃢♘*~\n0:35 ━━●────────── -5:33\n⇆        ◁ㅤㅤ ❚❚ㅤㅤ ▷        ↻\n      VOLUME 🔉■■■■□90%🔊\n     🧚🏼‍♂️✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶🧚🏼‍♂️"
+            "value": "✮⃝🕊️✿𝖀𝖕𝖑𝖔𝖆𝖉𝖎𝖓𝖌 𝖄𝖔𝖚𝖗 𝕾𝖔𝖓𝖌✿✮⃝🕊️"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
