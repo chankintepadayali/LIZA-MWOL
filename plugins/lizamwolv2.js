@@ -3,7 +3,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 */
 
-const Neotro = require('../events');
+const LizaMwol = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
@@ -15,7 +15,7 @@ var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 
 
-Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+LizaMwol.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
         {title: '.HELP', description: "\n\n╭────────────────╮\n         ✰𝐋𝐈𝐙𝐀 𝐌𝐎𝐖𝐋✰ \n ╰────────────────╯\n ❏ ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs \n ╭──────────────── \n │ ▢ ᴀᴅᴅ \n │ ▢ ʙᴀɴ \n │ ▢ ᴍᴜᴛᴇ \n │ ▢ ᴜɴᴍᴜᴛᴇ \n │ ▢ ᴘʀᴏᴍᴏᴛᴇ \n │ ▢ ᴅᴇᴍᴏᴛᴇ \n │ ▢ ɪɴᴠɪᴛᴇ \n │ ▢ ᴊᴏɪɴ \n │ ▢ ᴡᴇʟᴄᴏᴍᴇ \n │ ▢ ɢᴏᴏᴅʙʏᴇ \n │ ▢ ᴋɪᴄᴋᴍᴇ \n │ ▢ ᴛᴀɢᴀʟʟ \n╰──────────────── \n ❏ ᴏᴡɴᴇʀ ᴄᴜᴍᴍᴇɴᴅs \n ╭──────────────── \n │ ▢ʙɢᴍ ᴏɴ/ᴏғғ \n │ ▢ᴛʜᴇʀɪ ᴏɴ/ᴏғғ \n │ ▢ʙᴀɴ │ ▢ᴛᴀɢᴀᴅᴍɪɴ \n │ ▢ ᴀᴜᴛᴏsᴛɪᴄᴋᴇʀ ᴏɴ/ᴏғғ \n │ ▢ ᴀɴᴛɪʟɪɴᴋ ᴏɴ/ᴏғғ \n │ ▢ ᴡᴀʀɴ \n │ ▢ ʙᴏᴛɴᴀᴍᴇ \n ╰──────────────── \n ❏ ᴅᴏᴡɴʟᴏᴅ ᴄᴏᴍᴍᴀɴᴅs \n ╭──────────────── \n │ ▢ sᴏɴɢ \n │ ▢ sɪɴɢ \n │ ▢ ʟʏʀɪᴄ \n │ ▢ ᴠɪᴅᴇᴏ \n │ ▢ ɪɴsᴛᴀ \n │ ▢ ɪᴍɢ \n │ ▢ ss \n │ ▢ ᴡɪᴋɪ \n ╰──────────────── \n ❏ ᴍɪsᴄ ᴄᴏᴍᴍᴀɴᴅs \n │ ▢ ɢɪᴛ \n │ ▢ ᴏᴡɴᴇʀ \n │ ▢ ᴏᴡɴᴇʀᴄᴍɴᴅ \n │ ▢ ᴀʟɪᴠᴇ \n │ ▢ xᴍᴇᴅɪᴀ \n │ ▢ ɢɪᴛʜᴜʙ \n │ ▢ sᴄᴀɴ \n │ ▢ ʀᴅᴍᴏʀᴇ \n │ ▢ ɴᴇᴡs \n │ ▢ ᴇᴍᴏ \n │ ▢ ғғɪʀᴇ \n │ ▢ ᴀɴɪᴍᴇ \n │ ▢ ʀᴇɴᴀᴍᴇ \n │ ▢ ᴍᴘ3 \n │ ▢ ᴍᴘ4 \n │ ▢ sᴛɪᴄᴋᴇʀ \n │ ▢ ᴘʜᴏᴛᴏ \n │ ▢ ᴛᴛs \n │ ▢ ᴜɴᴠᴏɪᴄᴇ \n │ ▢ ʀᴇᴍᴏᴠᴇʙɢ \n │ ▢ ᴀᴛᴛᴘ \n │ ▢ ᴛʀᴛ \n │ ▢ ᴄᴀʟᴄ \n │ ▢ ᴊᴏᴋᴇ \n │ ▢ ᴍᴏʟᴜ \n │ ▢ ɪɴsᴜʟᴛ \n │ ▢ ᴡᴀᴍᴇ \n │ ▢ ᴘʟᴜɢɪɴ \n │ ▢ ʀᴇᴍᴏᴠᴇ \n │ ▢ ғɪʟᴛᴇʀ \n │ ▢ ᴊɪᴅ \n │ ▢ ʙʟᴏᴄᴋ \n │ ▢ ᴜɴʙʟᴏᴄᴋ \n │ ▢ sʜᴏʀᴛ \n │ ▢ ᴡʜᴏɪs \n │ ▢ ᴡᴀʟʟᴘᴀᴘᴇʀ \n │ ▢ sʜᴏᴡ \n │ ▢ ᴍᴏᴠɪᴇ \n │ ▢ ᴄᴏᴠɪᴅ \n │ ▢ ᴘɪɴɢ \n ╰──────────────── \n ❏ ʜᴇʀᴏᴋᴜ ᴄᴏᴍᴍᴀɴᴅs \n ╭──────────────── \n │ ▢ ʀᴇsᴛᴀʀᴛ \n │ ▢ sʜᴜᴛᴅᴏᴡɴ \n │ ▢ sᴇᴛᴠᴀʀ \n │ ▢ ɢᴇᴛᴠᴀʀ \n │ ▢ ᴀʟʟᴠᴀʀ \n │ ▢ sᴜᴅᴏ \n │ ▢ ᴜᴘᴅᴀᴛᴇ \n │ ▢ ᴜᴘᴅᴀᴛᴇ ɴᴏᴡ \n ╰──────────────── ", rowId:" rowid1"},
