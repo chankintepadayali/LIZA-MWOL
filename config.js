@@ -62,6 +62,8 @@ module.exports = {
     YAK: process.env.YAK === undefined ? '918921483992,0' : process.env.YAK,
     OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'LIZA-MWOL' : process.env.OWNER_SHIP,
     LIZA: process.env.LOGO_LINK === undefined ? 'https://i.imgur.com/2nYs8dN.jpg' : process.env.LOGO_LINK,
+    MWOL: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
+    BOTV2: process.env.BOTV2_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐\n' : process.env.BOTV2_NAME,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
