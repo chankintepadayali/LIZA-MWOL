@@ -134,6 +134,16 @@
             "required": false,
             "value": "  𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐  \n\n   *ωнαтsαρρ вσт™*   \n"
         },
+        "BOTV2_NAME": {
+            "description": "heading for bgm command reply",
+            "required": false,
+            "value": "ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐\n"
+        },
+        "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by (hunk!nd3 p4d4y41!",
+            "required": false,
+            "value": "39999600"
+        },
         "WORK_TYPE": {
             "description": "Liza Mwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
