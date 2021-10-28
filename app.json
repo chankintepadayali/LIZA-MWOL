@@ -137,7 +137,7 @@
         "BOTV2_NAME": {
             "description": "heading for bgm command reply",
             "required": false,
-            "value": "ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐\n"
+            "value": "ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐"
         },
         "BGM_DURATION": {
             "description": "FUNY BGM DURATION  codded by (hunk!nd3 p4d4y41!",
