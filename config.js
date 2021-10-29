@@ -64,7 +64,6 @@ module.exports = {
     LIZA: process.env.LOGO_LINK === undefined ? 'https://i.imgur.com/2nYs8dN.jpg' : process.env.LOGO_LINK,
     MWOL: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
     BOTV2: process.env.BOTV2_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐' : process.env.BOTV2_NAME,
-    PLK: process.env.NUMBER === undefined ? 'false' : process.env.NUMBER,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
