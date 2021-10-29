@@ -24,3 +24,4 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         msg +=  `TITLE :${result.title}\n\n`        
         msg += '```'
          return awai
+        });
