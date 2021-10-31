@@ -18,7 +18,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 *owner number wa.me/918075379950*
 
 
-*whatsapp group : _https://tinyurl.com/ygpz5bdq_*
+*whatsapp group : https://chat.whatsapp.com/FVOdpPLaMvP24rIfTzCGof*
 
 
 *githublink       _https://tinyurl.com/yjdej5a2_*
