@@ -22,7 +22,7 @@ Asena.addCommand({pattern: 'helpp', fromMe: false, dontAddCommandList: true}, (a
     const rows = [
         {title: 'ALIVE', description: " ", rowId:" rowid1"},
         {title: '.MENU', description: "  ", rowId:" rowid2"},
-        {title: '', description: ".MENU", rowId:" rowid3"},
+        {title: '.XMEDIA', description: "", rowId:" rowid3"},
         {title: 'OWNER', description: " ", rowId:" rowid4"},
         {title: 'GIT', description: "  ", rowId:" rowid5"}
        ]
