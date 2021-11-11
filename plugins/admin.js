@@ -90,7 +90,7 @@ Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: t
 
 Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    if (!im) return await message.client.sendMessage(message.jid,Lang.😹IM_NOT_ADMIN,MessageType.text);
 
     if (Config.PROMOTEMSG == 'default') {
         if (message.reply_message !== false) {
