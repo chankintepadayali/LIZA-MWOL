@@ -26,7 +26,7 @@ WhatsAlexa.addCommand({pattern: 'help', fromMe: whb, dontAddCommandList: true}, 
       ]
       
       const buttonMessage = {
-          contentText: ' ʜʏ ᴅᴜᴅᴇ....👋🏻\n\n         ☆ *𝙱𝙾𝚃 𝙸𝙽𝙵𝙾* ☆\n\n🌹 ɴᴀᴍᴇ  : ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ      \n🌹 sᴛᴀᴛᴇs : ᴘᴜʙʟɪᴄ\n🌹 ᴛɪᴍᴇ   : {time}\n🌹 ᴘᴇʀғɪx : [ . ]\n\n         ☆ *𝙲𝚁𝙴𝚃𝙴𝚁𝚂* ☆\n\n🌹ᴛᴇᴀᴍ ʟɪᴢᴀ ᴍᴡᴏʟ\n\n          ☆ *𝚃𝙷𝙰𝙽𝙺𝚂* ☆\n\n🌹 ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n',
+          contentText: ' ʜʏ ᴅᴜᴅᴇ....👋🏻\n\n         ☆ *𝙱𝙾𝚃 𝙸𝙽𝙵𝙾* ☆\n\n🌹 ɴᴀᴍᴇ  : ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ      \n🌹 sᴛᴀᴛᴇs : ᴘᴜʙʟɪᴄ\n🌹 ᴛɪᴍᴇ   : {time}                                                        \n🌹 ᴘᴇʀғɪx : [ . ]\n\n         ☆ *𝙲𝚁𝙴𝚃𝙴𝚁𝚂* ☆\n\n🌹ᴛᴇᴀᴍ ʟɪᴢᴀ ᴍᴡᴏʟ\n\n          ☆ *𝚃𝙷𝙰𝙽𝙺𝚂* ☆\n\n🌹 ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n',
           footerText: '© ʟɪᴢᴀ ᴍᴡᴏʟ™',
           buttons: buttons,
           headerType: 1
