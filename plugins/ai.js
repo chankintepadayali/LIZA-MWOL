@@ -64,7 +64,7 @@ const convertToWav = file => {
 }
 
 Raashii.tozara({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
-    if (message.message.startsWith('zara') && conf.ZARA_AI !== 'true') {        
+    if (message.message.startsWith('Liza') && conf.LIZA_AI !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
@@ -93,7 +93,7 @@ Raashii.tozara({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand:
     }
 }));
 Raashii.tozara({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        if (conf.ZARA_AI == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+        if (conf.LIZA_AI == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
             if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
