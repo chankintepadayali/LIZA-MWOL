@@ -75,6 +75,11 @@
             "required": true,
             "value": "false"
         },
+        "LIZA_AI": {
+            "description": "turn on chat back auto reply Liza (use true to on and fale to off)",
+            "required": true,
+            "value": "true"
+        },
         "NO_LOG": {
             "description": " Set true if you don't want to see error log.",
             "required": true,
