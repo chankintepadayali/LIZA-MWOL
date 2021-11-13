@@ -63,7 +63,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-Raashii.tozara({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Raashii.toLiza({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('Liza') && conf.LIZA_AI !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
@@ -92,7 +92,7 @@ Raashii.tozara({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand:
         })
     }
 }));
-Raashii.tozara({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+Raashii.toLiza({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
         if (conf.LIZA_AI == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
             if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
@@ -181,7 +181,7 @@ Raashii.tozara({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
         }
 
 }));
-Raashii.tozara({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
+Raashii.toLiza({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
@@ -257,7 +257,7 @@ if (conf.LANG == 'ML') {
     succ_off = 'സെമി-ഫങ്ഷണൽ ആയി Zara സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-Raashii.tozara({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
+Raashii.toLiza({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
     var pinky_status = `${conf.LIZA_AI}`
     if (match[1] == 'on') {
         if (pinky_status == 'true') {
