@@ -9,6 +9,50 @@ var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 
+if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+          
+            // welcome
+            const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+             var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+                if (gb.message.includes('{pp}')) {
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                    //created by afnanplk
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/wel.jpg'), caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });                           
+           } else if (gb.message.includes('{gp}')) {
+             
+             const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+             
+                let gp
+                try { gp = await conn.getProfilePicture(msg.key.remoteJid); } catch { gp = await conn.getProfilePicture(); }
+                     var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+                  var rashijson = await conn.groupMetadata(msg.key.remoteJid)
+                await axios.get(gp, {responseType: 'arraybuffer'}).then(async (res) => {
+                    //created by Raashii
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('LizaMwol.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rashijson.subject).replace('{gpmaker}', rashijson.owner).replace('{gpdesc}', rashijson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
+} else if (gb.message.includes('{gif}')) {
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+               const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {thumbnail: fs.readFileSync('LizaMwol.jpg'), mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
+            } else {
+              const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+              var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag),MessageType.text,{ contextInfo: {mentionedJid: [msg.messageStubParameters[0]]}});
+            }
+          }         
+       
+            
+              return; 
+    }         
+
 let whb = Config.WORKTYPE == 'public' ? false : true
 
 WhatsAlexa.addCommand({pattern: 'help', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
@@ -26,7 +70,7 @@ var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '
       ]
       
       const buttonMessage = {
-          contentText: ' ʜʏ ᴅᴜᴅᴇ....👋🏻\n\n         ☆ *𝙱𝙾𝚃 𝙸𝙽𝙵𝙾* ☆\n\n🌹 ɴᴀᴍᴇ  : ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ      \n🌹 sᴛᴀᴛᴇs : ᴘᴜʙʟɪᴄ\n🌹 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🌹 ᴅᴀᴛᴇ : ```' + plk_here + '```\n🌹 ᴘᴇʀғɪx : [ . ]\n\n         ☆ *𝙲𝚁𝙴𝚃𝙴𝚁𝚂* ☆\n\n🌹ᴛᴇᴀᴍ ʟɪᴢᴀ ᴍᴡᴏʟ\n\n          ☆ *𝚃𝙷𝙰𝙽𝙺𝚂* ☆\n\n🌹 ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n',
+          contentText: ' ʜʏ ᴅᴜᴅᴇ....👋🏻{mention}\n\n         ☆ *𝙱𝙾𝚃 𝙸𝙽𝙵𝙾* ☆\n```'@'```\n🌹 ɴᴀᴍᴇ  : ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ      \n🌹 sᴛᴀᴛᴇs : ᴘᴜʙʟɪᴄ\n🌹 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🌹 ᴅᴀᴛᴇ : ```' + plk_here + '```\n🌹 ᴘᴇʀғɪx : [ . ]\n\n         ☆ *𝙲𝚁𝙴𝚃𝙴𝚁𝚂* ☆\n\n🌹ᴛᴇᴀᴍ ʟɪᴢᴀ ᴍᴡᴏʟ\n\n          ☆ *𝚃𝙷𝙰𝙽𝙺𝚂* ☆\n\n🌹 ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n',
           footerText: '© ʟɪᴢᴀ ᴍᴡᴏʟ™',
           buttons: buttons,
           headerType: 1
