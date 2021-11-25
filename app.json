@@ -172,6 +172,16 @@
             "required": false,
             "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands```"
         },
+        "ALIVEBUTTON": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "ʜᴇʟʟᴏ ʙʀᴏ"
+        },
+        "ALIVE_BUTTON": {
+            "description": "Set the Alive message first name",
+            "required": true,
+            "value": "ʜɪ ᴅᴜᴅᴇ"
+        },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
