@@ -65,6 +65,8 @@ module.exports = {
     MWOL: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
     BOTV2: process.env.BOTV2_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐' : process.env.BOTV2_NAME,
     LIZA_AI: process.env.LIZA_AI === undefined ? 'false' : process.env.LIZA_AI,
+    ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
+    ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
