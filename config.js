@@ -67,6 +67,8 @@ module.exports = {
     LIZA_AI: process.env.LIZA_AI === undefined ? 'false' : process.env.LIZA_AI,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
+    LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/0e0409148fa47cdb92582.jpg' : process.env.LG_LOGO,
+    LOGO_NAME: process.env.LOGO_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐' : process.env.LOGO_NAME,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
