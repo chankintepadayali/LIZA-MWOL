@@ -26,6 +26,5 @@
   "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
   "dependencies": {
     "raganork-bot": "1.4.3"
-    "sharp": "0.29.2"
   }
 }
