@@ -269,8 +269,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
             } else {
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   
-          }  //thanks to farhan      
+                await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{time}', afn_plk_).replace('{owner}', conn.user.name), MessageType.text);
+	    }
+          }
+		//thanks to farhan      
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
         var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
