@@ -1,4 +1,4 @@
-/* Codded by @phaticusthiccy
+/* Codded by @phaticusthiccy @chunkindepadayali
 Telegram: t.me/phaticusthiccy
 Instagram: www.instagram.com/kyrie.baran
 */
