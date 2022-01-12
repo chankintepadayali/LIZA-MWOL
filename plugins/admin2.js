@@ -1,4 +1,4 @@
-/*codded by afnanplk
+/*codded by afnanplk 
 */
 
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
