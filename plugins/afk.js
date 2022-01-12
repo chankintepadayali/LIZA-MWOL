@@ -4,7 +4,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
-Developer & Co-Founder - Phaticusthiccy
+Developer & Co-Founder - Phaticusthiccy 
 */
 
 const Asena = require('../events');
