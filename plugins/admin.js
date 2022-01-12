@@ -1,4 +1,4 @@
-const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys'); 
 const Asena = require('../events');
 const Config = require('../config');
 
