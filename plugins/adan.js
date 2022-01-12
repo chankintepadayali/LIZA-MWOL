@@ -1,6 +1,6 @@
 /* Codded by @mrclfd // rapiUp
 Telegram: t.me/mrclfd
-Semoga Berfaedah dan Berkah :)
+Semoga Berfaedah dan Berkah :) 
 */
 
 const Asena = require('../events');
