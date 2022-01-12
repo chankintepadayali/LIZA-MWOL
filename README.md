@@ -19,15 +19,23 @@ Project created by <a href="https://github.com/Chunkindepadayali">LIZA MWOL</a> 
 </p>
 
 ## Setup
-<div align="center">
 
-  ### Simple Method
+
+  ### If there is an error deploying, try the following steps
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Chunkindepadayali/LIZA-MWOL.git)
+1. If you dont have a github account create a account. Click [GIT HUB SIGN UP](https://github.com/signup/)
+
+2. Open the WhatsApp account where you want to create the bot and go into the link device and SCAN the QR code Click [SCAN](https://replit.com/@chunkindepadayali/LizaMwol?v=1)
  
-  
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@chunkindepadayali/LizaMwol?v=1)
-  
+3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
+
+4. You will have to fork this git to deploy via Heroku.
+  click to fork the git into your account
+ Click [FORK](https://github.com/Chunkindepadayali/LIZA-MWOL/fork)
+
+5. Now https://heroku.com/deploy?template=https://github.com/Chunkindepadayali/LIZA-MWOL copy this url and change Chunkindepadayali with your github username and click go
+                                                                 
+                                                                 
 ### The Hard Method
 ```js
 GET QR
@@ -63,9 +71,7 @@ $ node Liza.js
 <a href="https://github.com/Chunkindepadayali/LIZA-MWOL/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Chunkindepadayali/LIZA-MWOL?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
-<p align="center">
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Chunkindepadayali&show_icons=true&theme=dark&locale=en" alt="Chunkindepadayali" /></p>
-    
+
 ## 📢 Guide
 Click WA logo to Join Support Group 👇
     <br>
@@ -73,12 +79,8 @@ Click WA logo to Join Support Group 👇
   [![join](https://github.com/Chunkindepadayali/LIZA-MWOL/blob/master/WhatsAsena.png)](https://chat.whatsapp.com/BRPbS6JHUoCE480MpLLM5z)
   <div align="center">
        
-  ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=chunkindepadayali&bg_color=000000&color=4fff67&line=4fff67&point=ffffff&area=true&hide_border=true)
-  </div>
  
-  
-  [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://chat.whatsapp.com/BRPbS6JHUoCE480MpLLM5z)
-                     
+              
 ### ⚠️ Warning! 
 ```
 Due to Userbot; Your WhatsApp account may be banned.
