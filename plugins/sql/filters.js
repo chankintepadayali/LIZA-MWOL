@@ -76,4 +76,4 @@ module.exports = {
     getFilter: getFilter,
     setFilter: setFilter,
     deleteFilter: deleteFilter
-};
+};.
