@@ -1,23 +1,8 @@
 
-<div align="center">
-  <img border-radius: 15px src="20210811_082543.jpg"width="200" height="200"/>
-  <p align="center">
-    
-    
-<a href="#"><img title="LIZA MWOL" src="https://img.shields.io/badge/LIZA MWOL-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
-  <p align="center">
-<a href=https://github.com/Chunkindepadayali"><img title="Author" src="https://img.shields.io/badge/Author-(hunk!nd3 p4d4y41!-LIZAMWOL?color=blue&style=for-the-badge&logo=whatsapp"></a>
-</p>
-</div>
-<p align="center">
-Project created by <a href="https://github.com/Chunkindepadayali">LIZA MWOL</a> to make it public
-    <br>
-       | © |
-        Reserved |
-    <br> 
-</p>
-
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/Chunkindepadayali/LIZA-MWOL/master/Its-me-liza-mwol.gif" alt="LIZA MWOL" />
+</h1>
+  
 ## Setup
 
 
@@ -36,27 +21,12 @@ Project created by <a href="https://github.com/Chunkindepadayali">LIZA MWOL</a> 
 5. Now https://heroku.com/deploy?template=https://github.com/Chunkindepadayali/LIZA-MWOL copy this url and change Chunkindepadayali with your github username and click go
                                                                  
                                                                  
-### The Hard Method
-```js
-GET QR
-$ apt install git
-$ apt install nodejs --fix-missing
-$ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
-$ cd LIZA-MWOL
-$ npm install @adiwajshing/baileys
-$ npm install chalk
-$ node Liza.js
-```
-      
-```js
-SETUP
-$ git clone https://github.com/Chunkindepadayali/LIZA-MWOL
-$ cd LIZA-MWOL
-$ npm i
-$ node Liza.js
-```
 
-----
+
+
+
+
+
 
   <p align="center">
   <a href="https://github.com/Chunkindepadayali/LIZA-MWOL">
