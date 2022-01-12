@@ -23,7 +23,7 @@
 <br>
 <a href="https://chat.whatsapp.com/BRPbS6JHUoCE480MpLLM5z"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-lightgrey?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
    <br>
-   If in 
+
 
  
 ### ⚠️ Warning! 
