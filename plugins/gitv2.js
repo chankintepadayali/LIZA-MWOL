@@ -10,7 +10,7 @@ Ktb.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (a
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:LIZA MWOL [OWNER]\n' // full name
-            + 'ORG:Amalser;\n' // 
+            + 'ORG:ʟɪᴢᴀ ᴍᴡᴏʟ™;\n' // 
             + 'TEL;type=CELL;type=VOICE;waid=918075379950:+91 8137829228\n' // WhatsApp ID + phone number
             + 'TEL;type=CELL;type=VOICE;waid=918137829228:+91 8075379950\n' // 
             + 'END:VCARD'
