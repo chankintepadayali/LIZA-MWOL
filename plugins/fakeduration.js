@@ -32,7 +32,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['BGM_DURATION']: '99999999'
+                        ['BGM_DURATION']: '62384407'
                     } 
                 });
                 await message.sendMessage(AT)
