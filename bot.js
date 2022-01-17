@@ -203,7 +203,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
   return;
   }
 
-        
+      //edited chunkinde padayali  
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
  
@@ -227,7 +227,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                    var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
    
                 await axios.get(gp, {responseType: 'arraybuffer'}).then(async (res) => {
-                    //created by @chunkindepadayali
+                    //created by chunkinde padayali
                 await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./uploads/image/lizamwollogo.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rashijson.subject).replace('{gpmaker}', rashijson.owner).replace('{gpdesc}', rashijson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
              
    } else if (gb.message.includes('{gif}')) {
