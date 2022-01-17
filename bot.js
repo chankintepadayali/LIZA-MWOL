@@ -203,7 +203,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
   return;
   }
 
-        //@chunkindepadayali
+        
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
  
