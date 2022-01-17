@@ -66,7 +66,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
             var r_text = new Array ();
 
-            r_text[1] = "❀🍃Good❀ ❀morning❀🥰❀";
+            r_text[1] = "❀🍃Arjunser saysϟ Good❀ ❀morning❀🥰❀";
 
             r_text[2] ="☘️𝐺𝑜𝑜𝑑 🌅𝑚𝑜𝑟𝑛𝑖𝑛𝑔 💐";
 
@@ -92,7 +92,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
                 var r_text = new Array ();
 
-                r_text[1] = "😘𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
+                r_text[1] = "😘𝘼𝙍𝙅𝙐𝙉𝙎𝙀𝙍 𝙎𝘼𝙔𝙎 𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
 
                 r_text[2] ="🤗𝓖𝓸𝓸𝓭 🧚‍♀𝓷𝓲𝓰𝓱𝓽 ❄️✨";
 
@@ -140,7 +140,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
                         var r_text = new Array ();
 
-                        r_text[1] = "😘𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
+                        r_text[1] = "😘𝘼𝙧𝙟𝙪𝙣𝙨𝙚𝙧 𝙎𝘼𝙔𝙎 𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
 
                         r_text[2] ="🤗𝓖𝓸𝓸𝓭 🧚‍♀𝓷𝓲𝓰𝓱𝓽 ❄️✨";
 
