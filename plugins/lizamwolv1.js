@@ -1,5 +1,5 @@
-/* Amalser Bot
-Re-edit Amalser + chunkindepadayali
+/* Arjunser Bot
+Re-edit Arjunlal + Arjunser
 */
 
 const LizaMwol = require('../events');
@@ -18,7 +18,7 @@ var ddd = ggg.toString('utf-8')
 let whb = Config.WORKTYPE == 'public' ? false : true
 
 LizaMwol.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
-// send a buttons message!credit Amal
+// send a buttons message!credit Arjunser
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.ALIVE_BUTTON }, type: 1},
         {buttonId: 'id2', buttonText: {displayText: Config.ALIVEBUTTON }, type: 1}
@@ -26,7 +26,7 @@ LizaMwol.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (
       
       const buttonMessage = {
           contentText: '```'+Config.BOTV2+'\n\n```'+Config.ALIVEMSG+'\n',
-          footerText: 'ʟɪᴢᴀ ᴍᴡᴏʟ™ ',
+          footerText: 'ᴀʀᴊᴜɴ ꇙᴇʀ™ ',
           buttons: buttons,
           headerType: 1
       }
