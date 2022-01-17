@@ -51,6 +51,11 @@
             "required": true,
             "value": "false"
         },
+        "ANTI_FAKE_REMOVE": {
+            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
+            "required": true,
+            "value": "false"
+        },
         "AUTO_BİO": {
             "description": " Set true for auto date, time in biography.",
             "required": true,
