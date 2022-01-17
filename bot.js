@@ -173,6 +173,37 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         if (config.NO_ONLINE) {
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
+        
+        
+        if (msg.messageStubeType === 31 && config.FAKER === 'true') {
+    
+  if (!msg.messageStubParameters[0].startsWith('91') ) {
+  
+  async function checkImAdmin(message, user = conn.user.jid) {
+    var grup = await conn.groupMetadata(msg.key.remoteJid);
+    var sonuc = grup['participants'].map((member) => {
+        
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    
+    return sonuc.includes(true);
+}
+             
+		var iam = await checkImAdmin();
+     if (!iam) {
+       
+		return;
+		
+		}
+		   else {
+			return await conn.groupRemove(msg.key.remoteJid, [msg.messageStubParameters[0]]);
+			}	
+   
+  }
+  return;
+  }
+
+        //@chunkindepadayali
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
  
@@ -196,7 +227,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                    var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
    
                 await axios.get(gp, {responseType: 'arraybuffer'}).then(async (res) => {
-                    //created by Raashii
+                    //created by @chunkindepadayali
                 await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./uploads/image/lizamwollogo.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rashijson.subject).replace('{gpmaker}', rashijson.owner).replace('{gpdesc}', rashijson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
              
    } else if (gb.message.includes('{gif}')) {
