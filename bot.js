@@ -175,53 +175,91 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         }
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
-        const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var plk_here = new Date().toLocaleDateString(get_localized_date)
-	    var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
-
+ 
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 if (gb.message.includes('{pp}')) {
                 let pp 
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                    
+                    const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                    
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{time}', afn_plk_).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
-            } else if (gb.message.includes('{gif}')) {
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/bye.jpg'), caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]}}); });                           
+        } else if (gb.message.includes('{gp}')) {
+                let gp
+                try { gp = await conn.getProfilePicture(msg.key.remoteJid); } catch { gp = await conn.getProfilePicture(); }
+                const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                    var rashijson = await conn.groupMetadata(msg.key.remoteJid)
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+   
+                await axios.get(gp, {responseType: 'arraybuffer'}).then(async (res) => {
+                    //created by Raashii
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/bye.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rashijson.subject).replace('{gpmaker}', rashijson.owner).replace('{gpdesc}', rashijson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
+             
+   } else if (gb.message.includes('{gif}')) {
                 //created by afnanplk
-                    var plkpinky = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+                const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                    var plkpinky = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {thumbnail: fs.readFileSync('./media/image/bye.jpg'), mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
             } else {
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{time}', afn_plk_).replace('{owner}', conn.user.name), MessageType.text);
-            }
-          }  //thanks to farhan      
+              var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+              
+              const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag),MessageType.text,{ contextInfo: {mentionedJid: [msg.messageStubParameters[0]]}});
+                   
+              }
+              
+            } 
+           
             return;
-        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
-        const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var plk_here = new Date().toLocaleDateString(get_localized_date)
-	    var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
+            
+                  
+         }else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+          
             // welcome
+            const tag = '@' + msg.messageStubParameters[0].split('@')[0]
              var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
                 if (gb.message.includes('{pp}')) {
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                     var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                     //created by afnanplk
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
-            } else if (gb.message.includes('{gif}')) {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/wel.jpg'), caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });                           
+           } else if (gb.message.includes('{gp}')) {
+             
+             const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+             
+                let gp
+                try { gp = await conn.getProfilePicture(msg.key.remoteJid); } catch { gp = await conn.getProfilePicture(); }
+                     var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+                  var rashijson = await conn.groupMetadata(msg.key.remoteJid)
+                await axios.get(gp, {responseType: 'arraybuffer'}).then(async (res) => {
+                    //created by Raashii
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/wel.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rashijson.subject).replace('{gpmaker}', rashijson.owner).replace('{gpdesc}', rashijson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
+} else if (gb.message.includes('{gif}')) {
+                   var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+               const tag = '@' + msg.messageStubParameters[0].split('@')[0]
                 var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {thumbnail: fs.readFileSync('./media/image/wel.jpg'), mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
             } else {
-                   var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{time}', afn_plk_).replace('{owner}', conn.user.name), MessageType.text);
+              const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+              var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                    await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag),MessageType.text,{ contextInfo: {mentionedJid: [msg.messageStubParameters[0]]}});
             }
-          }         
+          }
+        
             return;                               
     }
 
