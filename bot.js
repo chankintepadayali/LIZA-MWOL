@@ -221,7 +221,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 		 const tag = '@' + msg.messageStubParameters[0].split('@')[0]
 		 
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{time}', afn_plk_).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });                
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{time}', afn_plk_).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); 
+			
             } else if (gb.message.includes('{gif}')) {
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
                 //created by afnanplk 
@@ -229,7 +230,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 		
                     var plkpinky = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
                 await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
-            } else {
+            
+		} else {
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
 		
 		const tag = '@' + msg.messageStubParameters[0].split('@')[0]
@@ -249,20 +251,24 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 if (gb.message.includes('{pp}')) {
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                  
+			var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
 		    
 		    const tag = '@' + msg.messageStubParameters[0].split('@')[0]
 		    
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                     //created by afnanplk
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });                        
-            } else if (gb.message.includes('{gif}')) {
+               
+			await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });                        
+            
+		} else if (gb.message.includes('{gif}')) {
                 var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
 		
 		const tag = '@' + msg.messageStubParameters[0].split('@')[0]
 		
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
-            } else {
+               await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} });
+            
+		} else {
                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
 		   
 		   const tag = '@' + msg.messageStubParameters[0].split('@')[0]
