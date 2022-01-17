@@ -24,7 +24,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 *githublink       ______private______Ask pm*
 
 
-*audio commads    __________NO________*
+*𝐌𝐘 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 ☛︎ https://instagram.com/arjun_mom_z?utm_medium=copy_link*
 
 *Bot Make Video ytube -https://youtu.be/JsHtSqSkdOU*
 
