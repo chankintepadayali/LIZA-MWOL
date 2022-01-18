@@ -70,6 +70,7 @@ module.exports = {
     LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/0e0409148fa47cdb92582.jpg' : process.env.LG_LOGO,
     LOGO_NAME: process.env.LOGO_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐' : process.env.LOGO_NAME,
     FAKER: process.env.ANTI_FAKE_REMOVE === undefined ? 'false' : process.env.ANTI_FAKE_REMOVE,
+    NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
