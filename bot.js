@@ -7,6 +7,7 @@ WhatsAsena - Yusuf Usta
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
+const raganork = require("./raganork");
 const chalk = require('chalk');
 const config = require('./config');
 const simpleGit = require('simple-git');
@@ -137,7 +138,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Liza Mwol working' + config.WORKTYPE + ' 𝚗𝚘𝚠 ✅'));
+            chalk.green.bold('✅️Liza Mwol working ' + config.WORKTYPE + ' 𝚗𝚘𝚠 '));
           // thanks to afnanplk
 	    if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
