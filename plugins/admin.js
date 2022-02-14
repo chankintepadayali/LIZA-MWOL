@@ -1607,7 +1607,9 @@ Asena.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: tru
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
 
-Asena.addCommand({pattern: 'rename ?(.*)', onlyGroup: true, fromMe: true,desc: Asena}, (async (message, match) => {
+Asena.addCommand({pattern: 'rename ?(.*)', fromMe: true,desc: Asena}, (async (message, match) => {
+   
+    if (message.jid.endsWith('@g.us')) {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,'i am not admin',MessageType.text);
     if (match[1] === '') return await message.client.sendMessage(message.jid,'changing',MessageType.text);
