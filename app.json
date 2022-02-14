@@ -17,7 +17,7 @@
             "required": false
         },
         "NUMBER": {
-            "description": "If you want to add a number to the git contact type the number including the country code Example: +91xxxxxxxxx",
+            "description": " If you want to add  owner number to your git contact, enter the number here, and be careful not to use + and space when entering the number. Example: 91xxxxxxxxx",
             "required": false
         },
         "LANGUAGE": {
