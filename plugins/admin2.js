@@ -1610,7 +1610,7 @@ Asena.addCommand({pattern: 'rename ?(.*)', fromMe: true,desc: Asena}, (async (me
     await message.client.groupUpdateSubject(message.jid, match[1]);
     await message.client.sendMessage(message.jid,'group name changed to  ```' + match[1] + '```' ,MessageType.text);
     }
-));
+}));
 module.exports = {
     checkImAdmin: checkImAdmin
 };
