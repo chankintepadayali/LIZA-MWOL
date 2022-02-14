@@ -1,10 +1,12 @@
-const Ktb = require('../events');
+//modified @ chunkindepadayali (liza mwol™)©
+
+const lizaMwol = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Ktb.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+lizaMwol.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
 //coded by saidali
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
