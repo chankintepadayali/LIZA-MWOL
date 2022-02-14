@@ -54,6 +54,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, dontAddCommandList: true, 
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
     }
+  }      
 }));
 
 Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
@@ -90,6 +91,7 @@ Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: t
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
     }
+  }      
 }));
 
 Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
@@ -150,6 +152,7 @@ Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: tr
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
     }
+  }      
 }));
 
 Asena.addCommand({pattern: 'no fake ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
@@ -222,6 +225,7 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, desc: Lang.DEMOTE_DESC,
     } else {
         return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
     }
+  }      
 }));
 
 Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
@@ -1580,6 +1584,7 @@ Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, dontAddCommandList: true,
             return await message.client.sendMessage(message.jid, mut.TÜR, MessageType.text);
         }
     }
+  }     
 }));
 
 Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
@@ -1596,6 +1601,7 @@ Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: true, dontAddCommandList: tru
         await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, false);
         await message.client.sendMessage(message.jid,Config.UNMUTEMSG,MessageType.text);
     }
+  }      
 }));
 
 Asena.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
@@ -1605,6 +1611,7 @@ Asena.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: tru
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
+}        
 }));
 
 Asena.addCommand({pattern: 'rename ?(.*)', fromMe: true,desc: Asena}, (async (message, match) => {
@@ -1616,8 +1623,8 @@ Asena.addCommand({pattern: 'rename ?(.*)', fromMe: true,desc: Asena}, (async (me
     await message.client.groupUpdateSubject(message.jid, match[1]);
     await message.client.sendMessage(message.jid,'group name changed to  ```' + match[1] + '```' ,MessageType.text);
     }
-));
-
+}));
+}
 module.exports = {
     checkImAdmin: checkImAdmin
 };
