@@ -62,7 +62,7 @@ module.exports = {
     YAK: process.env.YAK === undefined ? '918921483992,0' : process.env.YAK,
     OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'LIZA-MWOL' : process.env.OWNER_SHIP,
     LIZA: process.env.LOGO_LINK === undefined ? 'https://i.imgur.com/2nYs8dN.jpg' : process.env.LOGO_LINK,
-    MWOL: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
+    MWOL: process.env.BGM_DURATION === undefined ? '7280542' : process.env.BGM_DURATION,
     BOTV2: process.env.BOTV2_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʟɪᴢᴀ ᴍᴏʟ࿐' : process.env.BOTV2_NAME,
     LIZA_AI: process.env.LIZA_AI === undefined ? 'false' : process.env.LIZA_AI,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
