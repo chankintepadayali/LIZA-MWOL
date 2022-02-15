@@ -151,7 +151,7 @@
         "BGM_DURATION": {
             "description": "FUNY BGM DURATION  codded by (hunk!nd3 p4d4y41!",
             "required": false,
-            "value": "39999600"
+            "value": "7280542"
         },
         "WORK_TYPE": {
             "description": "Liza Mwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
@@ -174,7 +174,7 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands {pp}```"
+            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands ```"
         },
         "ALIVEBUTTON": {
             "description": "Set the alive message two name",
