@@ -6,12 +6,13 @@ const Config = require('../config');
 const axios = require('axios')
 const Axios = require('axios')
 
+//modified chunkindepadayali 
 
 Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
 	
 	await message.client.sendMessage(message.jid, '```hey dude wait cheyy```' , MessageType.text, { quoted: message.data });
 	
-	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
+	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=f883360745`)
 	
         const { status, result } = data
 	
