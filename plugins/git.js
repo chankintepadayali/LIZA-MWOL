@@ -11,24 +11,19 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     var respoimage = await axios.get(config.LIZA, { responseType: 'arraybuffer' })
 
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('20210811_082543.jpg'), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('liza mwol v2.jpg'), mimetype: Mimetype.png, caption: `~========~ʟɪɴᴋs~========~ 
  
-*owner number wa.me/918137829228*
+ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ wa.me/918137829228
    
-*owner number wa.me/918075379950*
+ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ wa.me/918075379950
 
 
-*whatsapp group : https://chat.whatsapp.com/FVOdpPLaMvP24rIfTzCGof*
+Wʜᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ : https://chat.whatsapp.com/EfzzqyQ0JANCvyATuhAaKe
 
 
-*githublink       _https://tinyurl.com/yjdej5a2_*
+ɢɪᴛʜᴜʙ ʟɪɴᴋ : https://github.com/Chunkindepadayali/LIZA-MWOL
 
-
-*audio commads    _https://tinyurl.com/ydvlpbol_*
-
-*Bot Make Video ytube -https://youtu.be/s3ugOuxbQ_Q_*
-
-*sticker commads  _https://tinyurl.com/yfpd23yn_*     
+ 
 `}) 
 
 })); 
