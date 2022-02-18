@@ -18,7 +18,7 @@
   click to fork the git into your account
  Click [FORK](https://github.com/Chunkindepadayali/LIZA-MWOL/fork)
 
-5. Now https://heroku.com/deploy?template=https://github.com/Arjunser5/LIZA-MWOL copy this url and change Chunkindepadayali with your github username and click go<br>
+5. Now https://heroku.com/deploy?template=https://github.com/Arjun-ser-ofc/LIZA-MWOL copy this url and change Chunkindepadayali with your github username and click go<br>
 ## join what's app group 
 <br>
 <a href="https://chat.whatsapp.com/J5Z3gyoxidd1JDiJzA9a9x"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-red?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
