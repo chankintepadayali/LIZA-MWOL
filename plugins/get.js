@@ -139,4 +139,3 @@ Asena.addCommand({pattern: 'need ?(.*)', fromMe: false, desc: Lang.GET_DESC}, (a
         await message.client.sendMessage(message.jid,'```' + Lang.LINK_TEXT + ' : ```'+ pallikkel +' \n ```' + Lang.NO_SPRT + '```',MessageType.text);
     }
     }));
-}
