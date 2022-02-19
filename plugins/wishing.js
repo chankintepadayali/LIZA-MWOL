@@ -1,4 +1,4 @@
-const asena = require('../events'); 
+const Asena = require('../events'); 
 
 const {MessageType} = require('@adiwajshing/baileys');
 
@@ -10,7 +10,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+Asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
