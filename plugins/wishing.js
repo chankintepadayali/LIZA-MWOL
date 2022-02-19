@@ -36,7 +36,7 @@ Asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM
 
     }));
 
-asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
+Asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -62,7 +62,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
     if (Config.WORKTYPE == 'public') {
 
-        asena.addCommand({pattern: 'gdmrng', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
+        Asena.addCommand({pattern: 'gdmrng', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
             var r_text = new Array ();
 
@@ -88,7 +88,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
             }));
 
-        asena.addCommand({pattern: 'gdni8', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
+        Asena.addCommand({pattern: 'gdni8', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
                 var r_text = new Array ();
 
@@ -110,7 +110,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
                 }));    
 
-                asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
+                Asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
 
                     var r_text = new Array ();
 
@@ -136,7 +136,7 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
                     }));
 
-                asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
+                Asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
 
                         var r_text = new Array ();
 
