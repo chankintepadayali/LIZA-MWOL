@@ -8,6 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const events = require("./events");
 const raganork = require("./raganork");
+const liza = require('./liza');
 const { FakeDB, takeMessage } = require("./plugins/sql/fake");
 const chalk = require('chalk');
 const config = require('./config');
