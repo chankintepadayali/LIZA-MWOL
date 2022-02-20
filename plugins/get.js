@@ -67,8 +67,8 @@ Asena.addCommand({pattern: 'need ?(.*)', fromMe: false, desc: Lang.GET_DESC}, (a
             const { status, type, data } = await instagram(match[1], 'julie')
         if (!status) return await message.sendMessage('```server down will solve as soon as possible```')
         await message.client.sendMessage(message.jid, LOAD_ING, MessageType.text, { quoted: message.data });
-        if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: config.AFN , quoted: message.data })
-        if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: config.AFN , quoted: message.data })
+        if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: config.ALL , quoted: message.data })
+        if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: config.ALL , quoted: message.data })
     }
     if (!match[1].includes('.com') && !match[1].includes('youtu.be')) {
         
@@ -99,7 +99,7 @@ Asena.addCommand({pattern: 'need ?(.*)', fromMe: false, desc: Lang.GET_DESC}, (a
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: match[1].replace('mp3', config.AFN) + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: match[1].replace('mp3', config.ALL) + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
            
         });
     }
@@ -131,7 +131,7 @@ Asena.addCommand({pattern: 'need ?(.*)', fromMe: false, desc: Lang.GET_DESC}, (a
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + config.AFN + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + config.ALL + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }
    if (match[1].includes('instagram.com') && match[1].includes('mp3') || match[1].includes('.gov') || match[1].includes('.edu') || match[1].includes('.org') || match[1].includes('.net') || match[1].includes('.biz') || match[1].includes('.info') || match[1].includes('.facebook')) {
