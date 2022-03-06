@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
    
 ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ wa.me/918075379950
 
-ʙᴏᴛ ᴜsᴇʀ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ wa.me/ ```'Config.NU'```
+ʙᴏᴛ ᴜsᴇʀ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ wa.me/ 'Config.NU'
 
 
 Wʜᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ : https://chat.whatsapp.com/EfzzqyQ0JANCvyATuhAaKe
