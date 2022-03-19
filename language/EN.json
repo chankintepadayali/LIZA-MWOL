@@ -235,7 +235,11 @@
             "REPORT": "Sends reports to group admins.",
             "USER": "=== ```Report``` ===\n\n*User:* ",
             "REASON": "\n*Reason:* ",
-            "REPLY": "*Please Respond to User's Message to Report!*"
+            "REPLY": "*Please Respond to User's Message to Report!*",
+            "WREPORT": "Sends warning reports to group admins.",
+            "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```1 warnings remaining``` \n\n *User:* ",
+            "WREASON": "\n*Reason of warn:* ",
+            "WREPLY": "*Please Respond to User's Message to Warning!*"
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
