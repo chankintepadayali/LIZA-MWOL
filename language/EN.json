@@ -237,7 +237,10 @@
             "REASON": "\n*Reason:* ",
             "REPLY": "*Please Respond to User's Message to Report!*",
             "WREPORT": "Sends warning reports to group admins.",
-            "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```1 warnings remaining``` \n\n *User:* ",
+            "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```3 warnings remaining``` \n\n *User:* ",
+            "WAUSER2": " ```⚠️ Warning ⚠️``` \n\n ```2 warnings remaining``` \n\n *User:* ",
+            "WAUSER1": " ```⚠️ Warning ⚠️``` \n\n ```1 warnings remaining``` \n\n *User:* ",
+            "WAUSER0": " ```⚠️ Warning ⚠️``` \n\n ```0 warnings remaining``` \n\n *User:* ",
             "WREASON": "\n*Reason of warn:* ",
             "WREPLY": "*Please Respond to User's Message to Warning!*"
         },
