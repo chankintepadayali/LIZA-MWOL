@@ -7,7 +7,7 @@ WhatsAsena - Yusuf Usta
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
-
+const testingggg = require("./plugins/testingggg");
 const raganork = require("./raganork");
 const liza = require('./liza');
 const { FakeDB, takeMessage } = require("./plugins/sql/fake");
