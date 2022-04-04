@@ -197,7 +197,22 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         
 			
                 
-		} else if (gb.message.includes('{gif}')) {
+		} else if (gb.message.includes('{bt}')) {
+			const tag = '@' + msg.messageStubParameters[0].split('@')[0]
+                                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                                    const buttons = [
+                                                                   {buttonId: 'id1', buttonText: {displayText: 'thanks'}, type: 1},
+                                                                ]                
+                                                                 const buttonMessage = {
+                                                                    contentText: gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', tag) ,
+                                                                    footerText: 'welcome',
+                                                                    buttons: buttons,
+                                                                    headerType: 1,    
+                                                                 }
+                                                   await conn.sendMessage(msg.key.remoteJid,buttonMessage,MessageType.buttonsMessage);                     }
+                                      
+                                        
+                                           } else if (gb.message.includes('{gif}')) {
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
                 //created by afnanplk 
 		const tag = '@' + msg.messageStubParameters[0].split('@')[0]
