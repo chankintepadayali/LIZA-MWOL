@@ -33,6 +33,6 @@ var img = await lizabuffer(Config.LIZA)
           headerType: 1
       }
       
-await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage, { mimetype: Mimetype.buttonsMessage, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: config.BOTV2,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage, { mimetype: Mimetype.buttonsMessage, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.BOTV2,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
 }));
